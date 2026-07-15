@@ -6,3 +6,77 @@
     box-sizing: border-box;
 }
 
+#contenedor-general{
+    max-width: 100%;
+    background-color: #ebebeb;
+    font-family: 'Elms Sans';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #caac5b;
+     padding-bottom: 10px;
+}
+
+.header__logo {
+      color: #ffffff;
+      font-size: 30px;
+      padding: 10px 10px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #242323;
+    padding: 10px;
+}
+
+.header__link:hover {
+    color: #ffcc41;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.perfil__contenedor-foto {
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.perfil__foto {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 15px;
+}
+.perfil__info {
+min-width: 100px;
+padding-left: 10px;
+}
+.perfil__info h1{
+    font-size: 1.2em;
+
+}
+
+.perfil__parrafo {
+    font-size: 0.5em;
+    line-height: 1.5em;
+}
+.footer {
+    background-color: #ffcc41;
+    height: 18vh;
+    font-size: 11px;
+    text-align: center;
+    align-content: center;   /*propiedad para alinear al centro de la caja */
+    font-weight: 500;
+}
