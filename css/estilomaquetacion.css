@@ -34,14 +34,14 @@
     font-size: 0.8em;
 }
 
-.header__link:hover {
+.nav__link:hover {
     color: #ffcc41;
 }
 
 .perfil {
     display: flex;
-    flex-direction: row;
-    height: 70vh;
+    flex-direction: column;
+    height: 75vh;
     justify-content: center;
     align-items: center;
     
@@ -50,27 +50,34 @@
 .perfil__contfoto {
     justify-content: center;
     align-items: center;
-    max-width: 200px;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 20px;
+
 }
 
 .contfoto__foto {
-    
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 50px;
-    padding: 15px;
+    
 }
 .perfil__info {
 min-width: 100px;
-padding-left: 10px;
+text-align: center;
+padding: 0px 20px 0px 20px;
 }
 .info__h1{
-    font-size: 1.2em;}
+    font-size: 1.2em;
+padding-bottom: 5px;}
 
 .info__parrafo {
-    font-size: 0.5em;
+    font-size: 0.8em;
     line-height: 1.5em;
+    text-wrap: pretty;
+    padding-bottom: 5px;
 }
+
 .footer {
     background-color: #ffcc41;
     height: 18vh;
@@ -79,3 +86,62 @@ padding-left: 10px;
     align-content: center;   /*propiedad para alinear al centro de la caja */
     font-weight: 500;
 }
+
+/* @media */
+
+@media (min-width: 680px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #ca5ba9;
+    padding-bottom: 10px;
+}
+
+.header__logo {
+      color: #ffffff;
+      font-size: 30px;
+      padding: 20px 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #242323;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.perfil__contfoto {
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    min-width: 350px;
+    padding: 30px;
+}
+.perfil__info {
+max-width: 350px;
+text-align: start;
+padding: 0px 20px 0px 20px;
+}
+
+.info__h1{
+    font-size: 3em;
+padding-bottom: 5px;}
+
+.info__parrafo {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-wrap: pretty;
+    padding-bottom: 20px;
+}
+}
+
