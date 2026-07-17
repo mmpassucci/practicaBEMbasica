@@ -94,10 +94,9 @@ padding-bottom: 5px;}
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    align-items: center;
-    background-color: #ca5ba9;
-    padding-bottom: 10px;
-}
+    align-content: center;
+    background-color:  #caac5b;
+   }
 
 .header__logo {
       color: #ffffff;
@@ -142,6 +141,11 @@ padding-bottom: 5px;}
     line-height: 1.5em;
     text-wrap: pretty;
     padding-bottom: 20px;
+}
+
+.footer {
+    font-size: 14px;
+ 
 }
 }
 
